@@ -1,0 +1,25 @@
+{{ define "body"}}
+<div class="text-center p-2">
+<h2>Все имеющиеся бегуны</h2>
+<table class="table table-bordered table-striped table-sm">
+<thead>
+<tr><th>ID</th><th>FirstName</th><th>LastName</th><th>Age</th><th>Country</th><th>PersonalBest</th><th>SeasonBest</th></tr>
+</thead>
+<tbody>
+{{ range . }}
+{{ if .IsActive }}
+<tr>
+<td>{{ .ID }}</td>
+<td>{{ .FirstName }}</td>
+<td>{{ .LastName }}</td>
+<td>{{ .Age }}</td>
+<td>{{ .Country }}</td>
+<td>{{ .PersonalBest }}</td>
+<td>{{ .SeasonBest }}</td>
+</tr>
+{{ end }}
+{{ end }}
+</tbody>
+</table>
+</div>
+{{ end }}

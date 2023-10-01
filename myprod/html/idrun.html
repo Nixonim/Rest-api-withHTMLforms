@@ -1,0 +1,22 @@
+{{ define "body"}}
+<div class="text-center p-2">
+<h2>Бегун с запрошенным ID</h2>
+<table class="table table-bordered table-striped table-sm">
+<thead>
+<tr><th>ID</th><th>FirstName</th><th>LastName</th><th>Age</th><th>IsActive</th><th>Country</th><th>PersonalBest</th><th>SeasonBest</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>{{ .ID }}</td>
+<td>{{ .FirstName }}</td>
+<td>{{ .LastName }}</td>
+<td>{{ .Age }}</td>
+<td>{{ .IsActive }}</td>
+<td>{{ .Country }}</td>
+<td>{{ .PersonalBest }}</td>
+<td>{{ .SeasonBest }}</td>
+</tr>
+</tbody>
+</table>
+</div>
+{{ end }}

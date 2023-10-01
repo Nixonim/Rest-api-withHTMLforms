@@ -1,0 +1,27 @@
+{{ define "body"}}
+<form method="POST" class="m-2">
+<div class="form-group my-1">
+<label>ID бегуна:</label>
+<input name="runner_id" class="form-control" value="{{.RunnerID}}" />
+</div>
+<div class="form-group my-1">
+<label>Результат рейса:</label>
+<input name="race_result" class="form-control" value="{{.RaceResult}}" />
+</div>
+<div class="form-group my-1">
+<label>Локация:</label>
+<input name="location" class="form-control" value="{{.Location}}" />
+</div>
+<div class="form-group my-1">
+<label>Позиция:</label>
+<input name="position" class="form-control" value="{{.Position}}" />
+</div>
+<div class="form-group my-1">
+<label>Год:</label>
+<input name="year" class="form-control" value="{{.Year}}" />
+</div>
+<button class="btn btn-primary mt-3"  type="submit">  
+    Submit 
+</button>
+</form>
+{{ end }}

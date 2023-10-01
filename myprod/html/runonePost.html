@@ -1,0 +1,10 @@
+{{ define "body"}}
+
+<form method="POST" class="m-2" >
+<div class="form-group my-1">
+<label for="name">Введите ID бегуна:</label>
+<input name="id" class="form-control" value="{{.ID}}" />
+</div>
+<button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{{ end }}
